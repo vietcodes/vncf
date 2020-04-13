@@ -1,11 +1,11 @@
 use select::document::Document;
 use select::predicate::{Attr, Class, Name, Predicate};
-use std::collections::HashMap;
+use std::collections::BTreeMap;
 
 fn main() {
     use walkdir::WalkDir;
 
-    let mut problems = HashMap::new();
+    let mut problems = BTreeMap::new();
     for entry in WalkDir::new("html") {
         let entry = entry.unwrap();
         if entry.path().extension().and_then(|x| x.to_str()) != Some("html") {
@@ -43,6 +43,7 @@ fn main() {
     }
     let _ = std::fs::remove_dir_all("output");
     let _ = std::fs::create_dir("output");
+    let mut list = String::new();
     for (id, (title, url)) in problems.iter() {
         let content = format!(
             r#"
@@ -65,5 +66,31 @@ fn main() {
         );
         std::fs::create_dir(&format!("output/{}", id)).unwrap();
         std::fs::write(&format!("output/{}/index.html", id), &content).unwrap();
+
+        list += &format!(
+            r#"<li><a href="{url}">{id} - {title}</a><li>"#,
+            url = url,
+            title = title,
+            id = id
+        );
     }
+    std::fs::write(
+        "output/index.html",
+        &format!(
+            r#"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNOI Codeforces problems list</title>
+</head>
+<body>
+    <ul>{list}</ul>
+</body>
+</html>"#,
+            list = list
+        ),
+    )
+    .unwrap();
 }
