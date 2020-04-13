@@ -68,7 +68,7 @@ fn main() {
         std::fs::write(&format!("output/{}/index.html", id), &content).unwrap();
 
         list += &format!(
-            r#"<li><a href="{url}">{id} - {title}</a><li>"#,
+            r#"<li><a href="{url}">{id} - {title}</a></li>"#,
             url = url,
             title = title,
             id = id
