@@ -1,0 +1,2723 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="X-Csrf-Token" content="ac9dfd9c09b05e4b352b3fbb9ee73569"/>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=0.01"/>
+
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/jquery-1.8.3.js"></script>
+    <script type="application/javascript">
+        window.standaloneContest = false;
+        function adjustViewport() {
+            var screenWidthPx = Math.min($(window).width(), window.screen.width);
+            var siteWidthPx = 1100; // min width of site
+            var ratio = Math.min(screenWidthPx / siteWidthPx, 1.0);
+            var viewport = "width=device-width, initial-scale=" + ratio;
+            $('#viewport').attr('content', viewport);
+            var style = $('<style>html * { max-height: 1000000px; }</style>');
+            $('html > head').append(style);
+        }
+
+        if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            adjustViewport();
+        }
+    </script>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="profileName" content="i2">
+    <meta name="google-site-verification" content="OTd2dN5x4nS4OPknPI9JFg36fKxjqY0i1PSfFPv_J90"/>
+    <meta property="fb:admins" content="100001352546622" />
+    <meta property="og:image" content="//sta.codeforces.com/s/79436/images/codeforces-telegram-square.png" />
+    <link rel="image_src" href="//sta.codeforces.com/s/79436/images/codeforces-telegram-square.png" />
+    <meta property="og:title" content="Dashboard - VNOI Marathon 2010 - Codeforces"/>
+    <meta property="og:description" content=""/>
+    
+    <meta property="og:site_name" content="Codeforces"/>
+    <meta name="uc" content="50870e7ddadf33eddf13a5eb40efd41712401572"/>
+    <meta name="usmc" content="ba80e044206239c32d8de28756a9b120aa020bdf"/>
+    
+    <meta name="cc" content="7ef61131ce2d210e83d5e65fce98549132ea3c8c"/>
+    <meta name="pc" content="82e90c0e3d1612301ac9c49d04433da503c59ead"/>
+    
+    <meta name="utc_offset" content="+03:00"/>
+    <meta name="verify-reformal" content="f56f99fd7e087fb6ccb48ef2" />
+    <title>Dashboard - VNOI Marathon 2010 - Codeforces</title>
+        <meta name="description" content="Codeforces. Programming competitions and contests, programming community" />
+        <meta name="keywords" content="programming algorithm contest competition informatics olympiads c++ java graphs vkcup" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/font-awesome.min.css" type="text/css" charset="utf-8" />
+
+        <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Cuprum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="//sta.codeforces.com/s/79436/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="//sta.codeforces.com/s/79436/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="//sta.codeforces.com/s/79436/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="//sta.codeforces.com/s/79436/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="//sta.codeforces.com/s/79436/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="//sta.codeforces.com/s/79436/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="//sta.codeforces.com/s/79436/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="//sta.codeforces.com/s/79436/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="//sta.codeforces.com/s/79436/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="//sta.codeforces.com/s/79436/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="//sta.codeforces.com/s/79436/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="//sta.codeforces.com/s/79436/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="//sta.codeforces.com/s/79436/favicon-16x16.png">
+    <link rel="manifest" href="//sta.codeforces.com/s/79436/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="//sta.codeforces.com/s/79436/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--CombineResourcesFilter-->
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/prettify.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/clear.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/ttypography.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/problem-statement.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/second-level-menu.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/roundbox.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/datatable.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/table-form.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/topic.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/jquery.jgrowl.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/facebox.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/jquery.wysiwyg.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/jquery.autocomplete.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/codeforces.datepick.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/colorbox.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/jquery.drafts.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/community.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/groups.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="//sta.codeforces.com/s/79436/css/sidebar-menu.css" type="text/css" charset="utf-8" />
+
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+    });
+    </script>
+    <script type="text/javascript" async
+            src="https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full"
+    >
+    </script>
+    <!-- /MathJax -->
+
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/prettify/prettify.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/pushstream.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/jquery.lavalamp.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/jquery.jgrowl.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/jquery.swipe.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/facebox.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/jquery.wysiwyg.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/controls/wysiwyg.colorpicker.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/controls/wysiwyg.table.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/controls/wysiwyg.image.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/controls/wysiwyg.link.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/ua-parser.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/jquery.datepick.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/jquery.ie6blocker.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/jquery.ba-bbq.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/jquery.drafts.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/clipboard.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/autosize.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/sjcl.js"></script>
+    <script type="text/javascript" src="/scripts/80b60299435231ddb3515f28066fc5b2/en/codeforces-options.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/codeforces.js?v=20160131"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/EventCatcher.js?v=20160131"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/js/preparedVerdictFormats-en.js"></script>
+    <!--/CombineResourcesFilter-->
+
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/markitup/skins/markitup/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/79436/markitup/sets/markdown/style.css" type="text/css" charset="utf-8" />
+
+
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/markitup/jquery.markitup.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/79436/markitup/sets/markdown/set.js"></script>
+
+    <!--[if IE]>
+    <style>
+        #sidebar {
+            padding-left: 1em;
+            margin: 1em 1em 1em 0;
+        }
+    </style>
+    <![endif]-->
+
+
+
+</head>
+<body class=" "><span style='display:none;' class='csrf-token' data-csrf='ac9dfd9c09b05e4b352b3fbb9ee73569'>&nbsp;</span>
+<!-- .notificationTextCleaner used in Codeforces.showAnnouncements() -->
+<div class="notificationTextCleaner" style="font-size: 0px"></div>
+<div class="button-up" style="display: none; opacity: 0.7; width: 50px; height:100%; position: fixed; left: 0; top: 0; cursor: pointer; text-align: center; line-height: 35px; color: #d3dbe4; font-weight: bold; font-size: 3.0rem;"><i class="icon-circle-arrow-up"></i></div>
+<div class="verdictPrototypeDiv" style="display: none;"></div>
+
+<!-- Codeforces JavaScripts. -->
+<script type="text/javascript">
+    String.prototype.hashCode = function() {
+        var hash = 0, i, chr;
+        if (this.length === 0) return hash;
+        for (i = 0; i < this.length; i++) {
+            chr   = this.charCodeAt(i);
+            hash  = ((hash << 5) - hash) + chr;
+            hash |= 0; // Convert to 32bit integer
+        }
+        return hash;
+    };
+
+    var queryMobile = Codeforces.queryString.mobile;
+    if (queryMobile === "true" || queryMobile === "false") {
+        Codeforces.putToStorage("useMobile", queryMobile == "true");
+    } else {
+        var useMobile = Codeforces.getFromStorage("useMobile");
+        if (useMobile === true || useMobile === false) {
+            if (useMobile != false) {
+                Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", useMobile));
+            }
+        }
+    }
+</script>
+<script type="text/javascript">
+    if (window.parent.frames.length > 0) {
+        window.stop();
+    }
+</script>
+
+
+<script type="text/javascript">
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '554666954583323',
+            xfbml      : true,
+            version    : 'v2.8'
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    (function () {
+        jQuery.expr[':'].containsCI = function(elem, index, match) {
+            return !match || !match.length || match.length < 4 || !match[3] || (
+                    elem.textContent || elem.innerText || jQuery(elem).text() || ''
+            ).toLowerCase().indexOf(match[3].toLowerCase()) >= 0;
+        }
+    }(jQuery));
+
+    $.ajaxPrefilter(function(options, originalOptions, xhr) {
+        var csrf = Codeforces.getCsrfToken();
+
+        if (csrf) {
+            var data = originalOptions.data;
+            if (originalOptions.data !== undefined) {
+                if (Object.prototype.toString.call(originalOptions.data) === '[object String]') {
+                    data = $.deparam(originalOptions.data);
+                }
+            } else {
+                data = {};
+            }
+            options.data = $.param($.extend(data, { csrf_token: csrf }));
+        }
+    });
+
+    window.getCodeforcesServerTime = function(callback) {
+        $.post("/data/time", {}, callback, "json");
+    }
+
+    window.updateTypography = function () {
+        $("div.ttypography code").addClass("tt");
+        $("div.ttypography pre>code").addClass("prettyprint").removeClass("tt");
+        $("div.ttypography table").addClass("bordertable");
+        prettyPrint();
+    }
+
+    $.ajaxSetup({ scriptCharset: "utf-8" ,contentType: "application/x-www-form-urlencoded; charset=UTF-8", headers: {
+        'X-Csrf-Token': Codeforces.getCsrfToken()
+    }});
+
+    window.updateTypography();
+
+    Codeforces.signForms();
+
+    setTimeout(function() {
+        $(".second-level-menu-list").lavaLamp({
+            fx: "backout",
+            speed: 700
+        });
+    }, 100);
+
+
+    Codeforces.countdown();
+    $("a[rel='photobox']").colorbox();
+
+        var count = 0;
+
+        function getDelay() {
+            var delay = 0;
+            var last = Codeforces.getFromStorage("LastOnlineTimeUpdaterMillis", 0);
+            if (last && last != null) {
+                var period = count < 20 ? 180 * 1000 : 360 * 1000;
+                delay = period - (new Date().getTime() - last);
+                if (delay < 0)
+                    delay = 0;
+            }
+            return delay;
+        }
+
+        window.setInterval(function () {
+            if (getDelay() <= 0 && count < 120) {
+                ++count;
+                Codeforces.ping("/data/update-online");
+            }
+        }, 5000);
+
+        var handle = "abcxyz1";
+        $("a.rated-user:contains(" + handle + "), span.participant:contains(" + handle + ")").each(function () {
+            if ($(this).text() == handle) {
+                var td = $(this).parent();
+                var tr = $(this).parent().parent();
+                if (td.is("td") && tr.is("tr")) {
+                    tr.addClass("highlighted-row");
+                }
+            }
+        });
+
+    function showAnnouncements(json) {
+        //info("j=" + JSON.stringify(json));
+
+        if (json.t != "a") {
+            return;
+        }
+        // console.log("Got announcement from channel");
+        setTimeout(function() {
+            Codeforces.showAnnouncements(json.d, "en");
+        }, Math.random() * 500);
+    }
+
+    function showEventCatcherUserMessage(json) {
+        if (json.t == "s") {
+            var points = json.d[5];
+            var passedTestCount = json.d[7];
+            var judgedTestCount = json.d[8];
+            var verdict = preparedVerdictFormats[json.d[12]];
+            var verdictPrototypeDiv = $(".verdictPrototypeDiv");
+            verdictPrototypeDiv.html(verdict);
+            if (judgedTestCount != null && judgedTestCount != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-judged").text(judgedTestCount);
+            }
+            if (passedTestCount != null && passedTestCount != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-passed").text(passedTestCount);
+            }
+            if (points != null && points != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-points").text(points);
+            }
+            Codeforces.showMessage(verdictPrototypeDiv.text());
+        }
+    }
+
+    $(".clickable-title").each(function() {
+        var title = $(this).attr("data-title");
+        if (title) {
+            var tmp = document.createElement("DIV");
+            tmp.innerHTML = title;
+            $(this).attr("title", tmp.textContent || tmp.innerText || "");
+        }
+    });
+
+    $(".clickable-title").click(function() {
+        var title = $(this).attr("data-title");
+        if (title) {
+            Codeforces.alert(title);
+        } else {
+            Codeforces.alert($(this).attr("title"));
+        }
+    }).css("position", "relative").css("bottom", "3px");
+
+        Codeforces.showDelayedMessage();
+
+    Codeforces.reformatTimes();
+
+    //Codeforces.initializePubSub();
+    if (window.codeforcesOptions.subscribeServerUrl) {
+        window.eventCatcher = new EventCatcher(
+            window.codeforcesOptions.subscribeServerUrl,
+            [
+                Codeforces.getGlobalChannel(),
+                Codeforces.getUserChannel(),
+                Codeforces.getUserShowMessageChannel(),
+                Codeforces.getContestChannel(),
+                Codeforces.getParticipantChannel(),
+                Codeforces.getTalkChannel()
+            ]
+        );
+
+        if (Codeforces.getParticipantChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getParticipantChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getContestChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getContestChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getGlobalChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getGlobalChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getUserChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getUserChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getUserShowMessageChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getUserShowMessageChannel(), function(json) {
+                showEventCatcherUserMessage(json);
+            });
+        }
+    }
+
+    Codeforces.setupContestTimes("/group/FLVn1Sc504/data/contests");
+    Codeforces.setupSpoilers();
+    Codeforces.setupTutorials("/data/problemTutorial");
+        });
+    </script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-743380-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function () {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = (document.location.protocol == 'https:' ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<div id="body">
+        <script type="text/javascript">
+            $(function() {
+                window._ftaa = "k1onx5h2cil867l25t";
+            })
+        </script>
+
+        <script type="text/javascript">
+            $(function() {
+                window._bfaa = "5e0e136d62a54cc849f57550d03b0e8a";
+            });
+        </script>
+            <script type="application/javascript">
+                window.setTimeout(function () {
+                    var url = location.href;
+                    var hashCode32 = Math.abs(url.hashCode()).toString();
+                    var hashCode = "p" + hashCode32 + Math.abs((hashCode32 + url).hashCode());
+                    var pvs = Codeforces.getFromStorage("pvs" + hashCode);
+                    if (!pvs) {
+                        $.post("/data/apv", {
+                            ftaa: window._ftaa,
+                            bfaa: window._bfaa,
+                            url: url
+                        }, function (json) {
+                            if (json["success"] === "true") {
+                                Codeforces.putToStorage("pvs" + hashCode, true);
+                            }
+                        }, "json");
+                    }
+                }, 5000);
+            </script>
+        
+
+<div class="side-bell" style="visibility: hidden; display: none; opacity: 0.7; width: 40px; position: fixed; right: 0; top: 0; cursor: pointer; text-align: center; line-height: 35px; color: #d3dbe4; font-weight: bold; font-size: 1.5rem;">
+    <span class="icon-stack" style="width: 100%;">
+        <i class="icon-circle icon-stack-base"></i>
+        <i class="icon-bell-alt icon-light"></i>
+    </span>
+    <br/>
+    <span class="side-bell__count" style="position: relative; top: -10px;"></span>
+</div>
+
+
+<div class="header-bell" style="display: none;">
+    <div class="header-bell__img"><span class="header-bell__count"></span></div>
+
+    <div class="bell-details">
+        <div class="bell-details__proto-row-comment">
+            <a class="bell-details__thumbnail-a" href="#"><img src=""/></a>
+            <div class="bell-details__comment"></div>
+            <div class="bell-details__time"></div>
+        </div>
+        <div class="bell-details__proto-row-blog-entry">
+            <a class="bell-details__thumbnail-a" href="#"><img src=""/></a>
+            <div class="bell-details__blog-entry"></div>
+            <div class="bell-details__time"></div>
+        </div>
+        <div class="bell-details__proto-row-comment-reply">
+            <a class="bell-details__thumbnail-a" href="#"><img src=""/></a>
+            <div class="bell-details__comment-reply"></div>
+        </div>
+
+        <div class="bell-details__no-new">
+            There are no new notifications
+        </div>
+
+        <div class="bell-details__recent-link">
+            <a href="/notifications">History (at most 100 notifications)</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .header-bell {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .header-bell__img {
+        opacity: 0.5;
+        background-image: url("//sta.codeforces.com/s/79436/images/icons/bell_inactive-20x20.png");
+        position: relative;
+        bottom: 1px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .header-bell__img-active  {
+        opacity: 1 !important;
+        background-image: url("//sta.codeforces.com/s/79436/images/icons/bell_active-20x20.png") !important;
+    }
+
+    .header-bell__count {
+        position: absolute;
+        top: 8px;
+        left: 18px;
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    .bell-details {
+        display: none;
+        z-index: 5;
+        border: 1px solid rgb(185, 185, 185);
+        width: 40rem;
+        max-height: 60rem;
+        padding: 0;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        background-color: white;
+        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .bell-details.sidebar-bell {
+        position: fixed;
+        right: 50px;
+    }
+
+    .bell-details__no-new {
+        font-size: 1.3rem;
+        display: block;
+        text-align: center;
+        color: #888 !important;
+        padding: 1em;
+    }
+
+    .bell-details__recent-link {
+        margin: 0;
+        padding: 0.5em;
+        text-align: center;
+        border-top: 1px solid rgb(185, 185, 185);
+    }
+
+    .bell-details__recent-link a {
+        font-size: 1.2rem;
+    }
+
+    .bell-details__proto-row-comment {
+        display: none;
+    }
+
+    .bell-details__proto-row-blog-entry {
+        display: none;
+    }
+
+    .bell-details__proto-row-comment-reply {
+        display: none;
+    }
+
+    .bell-details__row {
+        text-align: left;
+        margin: 0.5em;
+        padding: 0.25em 0.25em 0.75em 0.25em;
+        clear: both;
+    }
+
+    .bell-details__row:hover {
+        cursor: pointer;
+        background-color: #def;
+    }
+
+    .bell-details__row-active {
+        background-color: #def;
+    }
+
+    .bell-details__thumbnail-a {
+        text-decoration: none;
+    }
+
+    .bell-details__row img {
+        zoom: 50%;
+        margin-right: 2em;
+        float: left;
+    }
+
+    .bell-details__comment {
+        padding-left: 45px;
+        font-size: 1.3rem;
+    }
+
+    .bell-details__blog-entry {
+        padding-left: 45px;
+        font-size: 1.3rem;
+    }
+
+    .bell-details__comment-reply {
+        padding-left: 45px;
+        font-size: 1.3rem;
+    }
+
+    .bell-details__time {
+        padding-left: 45px;
+        margin-top: 0.2em;
+        font-size: 1.1rem;
+        color: #888 !important;
+    }
+</style>
+
+<script>
+    $(function () {
+        if ($(window).width() < 1600) {
+            $('.side-bell').css('width', '30px').css('line-height', '30px').css('font-size', '10px');
+        }
+
+        if ($(window).width() >= 1200) {
+            $ (window).scroll (function () {
+                if ($ (this).scrollTop () > 100) {
+                    $(".bell-details").addClass("sidebar-bell");
+                    $ ('.side-bell').fadeIn();
+                } else {
+                    $(".bell-details").removeClass("sidebar-bell");
+                    $ ('.side-bell').fadeOut();
+                }
+            });
+
+            $('.side-bell').hover(function () {
+                $(this).animate({
+                    'opacity':'1'
+                }).css({'color':'#6a86a4'});
+            }, function () {
+                $(this).animate({
+                    'opacity':'0.7'
+                }).css({'color':'#d3dbe4'});
+            });
+        }
+
+        $(".lang-chooser>div:first-child").prepend($("<span style='position: relative; bottom: 8px; padding: 0 0.5em;'>|</span>")).prepend($(".header-bell").show());
+        function Bell() {
+            var bell = this;
+            var notifications = JSON.parse("[]");
+
+            bell.notifications = {};
+
+            for (var i in notifications) {
+                if (notifications.hasOwnProperty(i)) {
+                    bell.notifications[notifications[i].id] = notifications[i];
+                }
+            }
+
+            function onClick(notification) {
+                var notificationIds = [];
+                var reason = notification.data.reasonType + "#" + notification.reasonId;
+                for (id in bell.notifications) {
+                    if (bell.notifications.hasOwnProperty(id)) {
+                        var otherNotification = bell.notifications[id];
+                        var otherReason = otherNotification.data.reasonType + "#" + otherNotification.reasonId;
+                        if (otherReason == reason) {
+                            notificationIds.push(otherNotification.id);
+                        }
+                    }
+                }
+                $.post("/data/notification", {action: "markAsRead", notificationIds: notificationIds.join(",")}, function(result) {
+                    Codeforces.redirect(notification.data.url);
+                }, "json");
+            }
+
+            var $bellDetails = $(".bell-details");
+            bell.newCommentRow = function (notification) {
+                var row = $(".bell-details__proto-row-comment").clone();
+                row.addClass("bell-details__row").attr("data-notificationId", notification.id);
+                row.find(".bell-details__thumbnail-a").attr("href", notification.data.reasonUserUrl);
+                row.find("img").attr("src", notification.data.reasonUserThumbnailUrl);
+                row.find(".bell-details__comment").html(
+                        "ReasonUser mentioned you in a comment".replace("ReasonUser", notification.data.reasonUserHtml)
+                );
+                row.find(".bell-details__time").html(
+                        "<span class='format-systemtimewithseconds'>"
+                        + notification.creationTimeString
+                        + "</span>"
+                );
+                row.removeClass("bell-details__proto-row-comment");
+                row.click(function() {
+                    onClick(notification);
+                    return false;
+                });
+                return row;
+            };
+            bell.newFriendCommentRow = function (notification) {
+                var row = $(".bell-details__proto-row-comment").clone();
+                row.addClass("bell-details__row").attr("data-notificationId", notification.id);
+                row.find(".bell-details__thumbnail-a").attr("href", notification.data.reasonUserUrl);
+                row.find("img").attr("src", notification.data.reasonUserThumbnailUrl);
+                row.find(".bell-details__comment").html(
+                        "ReasonUser wrote a comment".replace("ReasonUser", notification.data.reasonUserHtml)
+                );
+                row.find(".bell-details__time").html(
+                        "<span class='format-systemtimewithseconds'>"
+                        + notification.creationTimeString
+                        + "</span>"
+                );
+                row.removeClass("bell-details__proto-row-comment");
+                row.click(function() {
+                    onClick(notification);
+                    return false;
+                });
+                return row;
+            };
+            bell.newCommentReplyRow = function (notification) {
+                var row = $(".bell-details__proto-row-comment-reply").clone();
+                row.addClass("bell-details__row").attr("data-notificationId", notification.id);
+                row.find(".bell-details__thumbnail-a").attr("href", notification.data.reasonUserUrl);
+                row.find("img").attr("src", notification.data.reasonUserThumbnailUrl);
+                row.find(".bell-details__comment-reply").html(
+                        "ReasonUser replied to your comment".replace("ReasonUser", notification.data.reasonUserHtml)
+                );
+                row.find(".bell-details__time").html(
+                        "<span class='format-systemtimewithseconds'>"
+                        + notification.creationTimeString
+                        + "</span>"
+                );
+                row.removeClass("bell-details__proto-row-comment-reply");
+                row.click(function() {
+                    onClick(notification);
+                    return false;
+                });
+                return row;
+            };
+            bell.newBlogEntryRow = function (notification) {
+                var row = $(".bell-details__proto-row-blog-entry").clone();
+                row.addClass("bell-details__row").attr("data-notificationId", notification.id);
+                row.find(".bell-details__thumbnail-a").attr("href", notification.data.reasonUserUrl);
+                row.find("img").attr("src", notification.data.reasonUserThumbnailUrl);
+                row.find(".bell-details__blog-entry").html(
+                        "ReasonUser mentioned you in a blog entry".replace("ReasonUser", notification.data.reasonUserHtml)
+                );
+                row.find(".bell-details__time").html(
+                        "<span class='format-systemtimewithseconds'>"
+                        + notification.creationTimeString
+                        + "</span>"
+                );
+                row.removeClass("bell-details__proto-row-blog-entry");
+                row.click(function() {
+                    onClick(notification);
+                    return false;
+                });
+                return row;
+            };
+            bell.newFriendBlogEntryRow = function (notification) {
+                var row = $(".bell-details__proto-row-blog-entry").clone();
+                row.addClass("bell-details__row").attr("data-notificationId", notification.id);
+                row.find(".bell-details__thumbnail-a").attr("href", notification.data.reasonUserUrl);
+                row.find("img").attr("src", notification.data.reasonUserThumbnailUrl);
+                row.find(".bell-details__blog-entry").html(
+                        "ReasonUser wrote a blog entry".replace("ReasonUser", notification.data.reasonUserHtml)
+                );
+                row.find(".bell-details__time").html(
+                        "<span class='format-systemtimewithseconds'>"
+                        + notification.creationTimeString
+                        + "</span>"
+                );
+                row.removeClass("bell-details__proto-row-blog-entry");
+                row.click(function() {
+                    onClick(notification);
+                    return false;
+                });
+                return row;
+            };
+            bell.newProposalCommentRow = function (notification) {
+                var row = $(".bell-details__proto-row-comment-reply").clone();
+                row.addClass("bell-details__row").attr("data-notificationId", notification.id);
+                row.find(".bell-details__thumbnail-a").attr("href", notification.data.reasonUserUrl);
+                row.find("img").attr("src", notification.data.reasonUserThumbnailUrl);
+                row.find(".bell-details__comment-reply").html(
+                        "ReasonUser commented on ProposalType Proposal".replace("ReasonUser", notification.data.reasonUserHtml)
+                                .replace("ProposalType", "Contest" == notification.data.proposalType ? "contest proposal" : "problem proposal")
+                                .replace("Proposal", $("<div/>").text(notification.data.proposalName).html())
+                );
+                row.find(".bell-details__time").html(
+                        "<span class='format-systemtimewithseconds'>"
+                        + notification.creationTimeString
+                        + "</span>"
+                );
+                row.removeClass("bell-details__proto-row-comment-reply");
+                row.click(function() {
+                    onClick(notification);
+                    return false;
+                });
+                return row;
+            };
+
+            bell.renderRow = function (notification) {
+                var $row = $(".bell-details__row[data-notificationId='" + notification.id + "']");
+
+                if ($bellDetails.css("display") != "block" && notification.read) {
+                    $row.hide();
+                    return;
+                }
+
+                notification.data = JSON.parse(notification.dataJson);
+
+                var reason = notification.data.reasonType + "#" + notification.reasonId;
+
+                var has = false;
+                $row.each(function () {
+                    has = true;
+                });
+                if ($(".bell-details__row[data-reason='" + reason + "']").length) {
+                    has = true;
+                }
+
+                if (!has) {
+                    $(".side-bell").css("visibility", "visible");
+                    var newRow;
+                    if (notification.type == "Comment") {
+                        newRow = bell.newCommentRow(notification);
+                    } else if (notification.type == "BlogEntry") {
+                        newRow = bell.newBlogEntryRow(notification);
+                    } else if (notification.type == "CommentReply") {
+                        newRow = bell.newCommentReplyRow(notification);
+                    } else if (notification.type == "FriendComment") {
+                        newRow = bell.newFriendCommentRow(notification);
+                    } else if (notification.type == "FriendBlogEntry") {
+                        newRow = bell.newFriendBlogEntryRow(notification);
+                    } else if (notification.type == "ProposalComment") {
+                        newRow = bell.newProposalCommentRow(notification)
+                    }
+                    if (newRow) {
+                        newRow.attr("data-reason", reason);
+                        $(".bell-details").prepend(newRow);
+                    }
+                }
+            };
+
+            var $count = $(".header-bell__count, .side-bell__count");
+            var $img = $(".header-bell__img");
+            var $noNew = $(".bell-details__no-new");
+
+            bell.renewCount = function () {
+                Codeforces.reformatTimes();
+                var count = 0;
+                var counted = {};
+                for (var id in bell.notifications)
+                    if (bell.notifications.hasOwnProperty(id)) {
+                        var notification = bell.notifications[id];
+                        if (notification) {
+                            var reason = notification.data.reasonType + "#" + notification.reasonId;
+                            if (!notification.read && !counted[reason]) {
+                                count++;
+                                counted[reason] = true;
+                            }
+                        }
+                    }
+                if (count > 0) {
+                    $count.text(count);
+                    $img.addClass("header-bell__img-active");
+                    $noNew.hide();
+                } else {
+                    $count.text("");
+                    $img.removeClass("header-bell__img-active");
+                    if ($bellDetails.css("display") != "block") {
+                        $noNew.show();
+                    }
+                }
+            };
+
+            for (var id in bell.notifications)
+                if (bell.notifications.hasOwnProperty(id))
+                    bell.renderRow(bell.notifications[id]);
+
+            if (window.eventCatcher) {
+                window.eventCatcher.subscribe(Codeforces.getUserChannel(), function(json) {
+                    if (json.t === "n") {
+                        for (var i in json.d)
+                            if (json.d.hasOwnProperty(i)) {
+                                var notification = json.d[i];
+                                notification.data = JSON.parse(notification.dataJson);
+                                bell.notifications[notification.id] = notification;
+                                bell.renderRow(notification);
+                                bell.renewCount();
+                            }
+                    }
+                });
+            }
+
+
+            $(".header-bell, .side-bell").click(function() {
+                if ($bellDetails.css("display") == "none") {
+                    for (var id in bell.notifications)
+                        if (bell.notifications.hasOwnProperty(id))
+                            if (bell.notifications[id].read)
+                                bell.renderRow(bell.notifications[id]);
+                    bell.renewCount();
+
+                    $bellDetails.css("display", "block");
+
+                    var notificationIds = [];
+                    for (id in bell.notifications)
+                        if (bell.notifications.hasOwnProperty(id))
+                            notificationIds.push(id);
+
+                    setTimeout(function() {
+                        if ($bellDetails.css("display") == "block") {
+                            $.post("/data/notification", {action: "markAsRead", notificationIds: notificationIds.join(",")}, function(result) {
+                                // No operations.
+                            }, "json");
+
+                            for (var i in notificationIds) {
+                                if (notificationIds.hasOwnProperty(i)) {
+                                    bell.notifications[notificationIds[i]].read = true;
+                                }
+                            }
+                            bell.renewCount();
+                        }
+                    }, 2000);
+                } else {
+                    var has = false;
+                    for (var id in bell.notifications) {
+                        if (bell.notifications.hasOwnProperty(id) && !bell.notifications[id].read) {
+                            has = true;
+                        }
+                    }
+                    if (!has) {
+                        $(".side-bell").css("visibility", "hidden");
+                    }
+                    $bellDetails.css("display", "none");
+                    bell.renewCount();
+                }
+            });
+        }
+
+        bell = new Bell();
+        bell.renewCount();
+    })
+</script>
+
+<div id="header" style="position: relative;">
+    <div style="float:left;">
+            VNOI contests  <ul>   <li><a href="https://www.facebook.com/groups/163215593699283/">Facebook group</a>   </li>   <li><a href="http://vnoi.info/wiki/Home">Tài liệu thuật toán</a></li>   <li><a href="https://codeforces.com/group/FLVn1Sc504/contests">Danh sách bài</a></li> </ul>
+    </div>
+    <div class="lang-chooser">
+        <div style="text-align: right;">
+            <a href="?locale=en"><img src="//sta.codeforces.com/s/79436/images/flags/24/gb.png" title="In English" alt="In English"/></a>
+            <a href="?locale=ru"><img src="//sta.codeforces.com/s/79436/images/flags/24/ru.png" title="По-русски" alt="По-русски"/></a>
+        </div>
+
+        <div >
+                        <a href="/profile/abcxyz1">abcxyz1</a>
+                     | 
+                        <a href="/08062857743070ec63a18d47d73f22d3/logout">Logout</a>
+                    
+        </div>
+
+
+
+    </div>
+    <br style="clear: both;"/>
+</div>
+        
+
+    <div class="roundbox menu-box" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+    <div class="menu-list-container">
+    <ul class="menu-list main-menu-list">
+                <li class=""><a href="/">Home</a></li>
+                <li class=""><a href="/top">Top</a></li>
+                <li class=""><a href="/contests">Contests</a></li>
+                <li class=""><a href="/gyms">Gym</a></li>
+                <li class=""><a href="/problemset">Problemset</a></li>
+                <li class="current"><a href="/groups">Groups</a></li>
+                <li class=""><a href="/ratings">Rating</a></li>
+                <li class=""><a href="/apiHelp">API</a></li>
+                <li class=""><a href="/calendar">Calendar</a></li>
+                <li class=""><a href="/help">Help</a></li>
+                <li class=""><a href="/10years"><span style="color:#ce2a2a;font-weight:bold;">10 years! <i style="font-size:100%" class="icon-gift"></i></span></a></li>
+    </ul>
+        <form method="post" action="/search"><input type='hidden' name='csrf_token' value='ac9dfd9c09b05e4b352b3fbb9ee73569'/>
+            <input class="search" name="query" data-isPlaceholder="true" value=""/>
+        </form>
+    <br style="clear: both;"/>
+</div>
+
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("input.search").focus(function () {
+                if ($(this).attr("data-isPlaceholder") === "true") {
+                    $(this).val("");
+                    $(this).removeAttr("data-isPlaceholder");
+                }
+            });
+        });
+    </script>
+            <br style="height: 3em; clear: both;"/>
+
+        <div style="position: relative;">
+                        <div id="sidebar">
+    <div class="roundbox sidebox" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <table class="rtable ">
+            <tbody>
+                <tr>
+                            <th class="left" style="width:100%;"><a style="color: black" href="/group/FLVn1Sc504">VNOI - Vietnam Olympiad in Informatics</a></th>
+                </tr>
+                    <tr>
+                                <td class="left " colspan="1"><span class='contest-state-phase'>Public</span></td>
+                    </tr>
+                    <tr>
+                                <td class="left  dark" colspan="1"><span class='contest-state-regular countdown'>Participant</span></td>
+                    </tr>
+                    <tr>
+                                <td class="left bottom" colspan="1"><span>
+    <span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="GROUP" data-entityId="2233" data-size="24" src="//sta.codeforces.com/s/79436/images/icons/star_gray_24.png"/>
+    </span>
+
+</span></td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="roundbox sidebox" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled">&rarr; About Group
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="smaller" style="margin: 1em">
+        For organizing contests / publishing materials for Vietnamese Competitive Programming community.
+        </div>
+            <hr width="92%"/>
+        <div class="smaller" style="margin: 1em"><a href="https://www.facebook.com/groups/163215593699283/">Group website</a></div>
+    </div>
+
+    <div class="roundbox sidebox" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <table class="rtable ">
+            <tbody>
+                <tr>
+                            <th class="left" style="width:100%;"><a style="color: black" href="/group/FLVn1Sc504/contest/272622">VNOI Marathon 2010</a></th>
+                </tr>
+                    <tr>
+                                <td class="left " colspan="1"><span class="contest-state-phase">Finished</span></td>
+                    </tr>
+                    <tr>
+                                <td class="left  dark" colspan="1"><span class="contest-state-regular">Practice</span></td>
+                    </tr>
+                    <tr>
+                                <td class="left bottom" colspan="1"><span class="contest-state-regular"><center>
+    <span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="CONTEST" data-entityId="272622" data-size="24" src="//sta.codeforces.com/s/79436/images/icons/star_gray_24.png"/>
+    </span>
+
+</center></span></td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+</div>
+                        <div id="pageContent" class="content-with-sidebar">
+                    <div class="second-level-menu">
+<ul class="second-level-menu-list">
+        <li class="current selectedLava"><a
+                                        href="/group/FLVn1Sc504/contest/272622">Problems</a></li>
+        <li><a
+                                        href="/group/FLVn1Sc504/contest/272622/submit">Submit Code</a></li>
+        <li><a
+                                        href="/group/FLVn1Sc504/contest/272622/my">My Submissions</a></li>
+        <li><a
+                                        href="/group/FLVn1Sc504/contest/272622/status">Status</a></li>
+        <li><a
+                                        href="/group/FLVn1Sc504/contest/272622/standings/groupmates/true">Standings</a></li>
+        <li><a
+                                        href="/group/FLVn1Sc504/contest/272622/customtest">Custom Invocation</a></li>
+</ul>
+</div>
+
+
+
+<div class="datatable"
+     
+     style="background-color: #E1E1E1; padding-bottom: 3px;">
+            <div class="lt">&nbsp;</div>
+            <div class="rt">&nbsp;</div>
+            <div class="lb">&nbsp;</div>
+            <div class="rb">&nbsp;</div>
+
+            <div style="padding: 4px 0 0 6px;font-size:1.4rem;position:relative;">
+                Problems
+
+                <div style="position:absolute;right:0.25em;top:0.35em;">
+                    <span style="padding:0;position:relative;bottom:2px;" class="rowCount"></span>
+
+                    <img class="closed" src="//sta.codeforces.com/s/79436/images/icons/control.png"/>
+
+                    <span class="filter" style="display:none;">
+                        <img class="opened" src="//sta.codeforces.com/s/79436/images/icons/control-270.png"/>
+                        <input style="padding:0 0 0 20px;position:relative;bottom:2px;border:1px solid #aaa;height:17px;font-size:1.3rem;"/>
+                    </span>
+                </div>
+            </div>
+            <div style="background-color: white;margin:0.3em 3px 0 3px;position:relative;">
+            <div class="ilt">&nbsp;</div>
+            <div class="irt">&nbsp;</div>
+            <table class="problems">
+
+<tr>
+    <th style="width: 4em;">#</th>
+    <th>Name</th>
+    <th style="width: 5em;">&nbsp;</th>
+            <th style="width: 5em;">&nbsp;</th>
+</tr>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/A">
+                A
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/A"><!--
+                        -->WEATHER - Điều kiện thời tiết<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    1 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/A"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="565241" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("img.toggle-favourite").click(function () {
+                var size = $(this).attr("data-size");
+                var img = $(this);
+
+                var isFavourite = !img.hasClass("remove-favourite");
+                var type = img.attr("data-type");
+                var entityId = img.attr("data-entityId");
+
+                $.post("/data/favourite",
+                        { entityId: entityId, type: type, isFavourite: isFavourite },
+                        function(response) {
+                            if (response["success"] != "true") {
+                                alert(response["message"]);
+                            } else {
+                                if (img.hasClass("remove-favourite")) {
+                                    img.attr("src", "//sta.codeforces.com/s/79436/images/icons/star_gray_" + size + ".png");
+                                    img.removeClass("remove-favourite");
+                                    img.addClass("add-favourite");
+                                } else {
+                                    img.attr("src", "//sta.codeforces.com/s/79436/images/icons/star_yellow_" + size + ".png");
+                                    img.removeClass("add-favourite");
+                                    img.addClass("remove-favourite");
+                                }
+                            }
+                        }, "json"
+                );
+
+                return false;
+            });
+        });
+    </script></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                <a title="Participants solved the problem" href="/group/FLVn1Sc504/contest/272622/status/A"><img style="vertical-align: middle;" src="//sta.codeforces.com/s/79436/images/icons/user.png"/>&nbsp;x1</a>
+        </td>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/B">
+                B
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/B"><!--
+                        -->NKBAS - Trung t&acirc;m bảo h&agrave;nh<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    1 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/B"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="565242" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                &nbsp;
+        </td>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/C">
+                C
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/C"><!--
+                        -->ZOOTOUR - Tham quan vườn b&aacute;ch th&uacute;<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    0.4 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/C"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="565243" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                &nbsp;
+        </td>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/D">
+                D
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/D"><!--
+                        -->SUMTREE - Tổng tr&ecirc;n c&acirc;y<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    1 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/D"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="565244" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                &nbsp;
+        </td>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/E">
+                E
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/E"><!--
+                        -->TCHESS - B&agrave;n cờ tam gi&aacute;c<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    0.25 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/E"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="565245" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                &nbsp;
+        </td>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/F">
+                F
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/F"><!--
+                        -->PRODUCT - T&iacute;ch<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    0.4 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/F"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="565246" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                &nbsp;
+        </td>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/G">
+                G
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/G"><!--
+                        -->OLDMAPS - Bộ bản đồ cũ kỹ<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    0.4 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/G"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="565247" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                &nbsp;
+        </td>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/H">
+                H
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/H"><!--
+                        -->COMPUTER - M&aacute;y t&iacute;nh<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    1 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/H"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="565248" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                &nbsp;
+        </td>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/I">
+                I
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/I"><!--
+                        -->NETACCEL - Tăng tốc mạng m&aacute;y t&iacute;nh<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    0.25 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/I"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="565249" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                &nbsp;
+        </td>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/J">
+                J
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/J"><!--
+                        -->INKPRINT - Mực in<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    0.4 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/J"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="565250" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                &nbsp;
+        </td>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/K">
+                K
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/K"><!--
+                        -->KINGDOMS - KINGDOMS<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    0.4 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/K"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="565251" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                &nbsp;
+        </td>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/L">
+                L
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/L"><!--
+                        -->KIDSMATH - B&eacute; l&agrave;m to&aacute;n<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    0.25 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/L"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="565252" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                &nbsp;
+        </td>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/M">
+                M
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/M"><!--
+                        -->CFLAG - Quốc kỳ rực rỡ<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    0.25 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/M"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="565253" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                &nbsp;
+        </td>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/N">
+                N
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/N"><!--
+                        -->VM10HNTW - X&acirc;y th&aacute;p H&agrave; Nội<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    2 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/N"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="579934" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                &nbsp;
+        </td>
+    <tr
+        
+            
+    >
+    <td class="id">
+            <a href="/group/FLVn1Sc504/contest/272622/problem/O">
+                O
+            </a>
+    </td>
+    <td>
+        <div style="position: relative;">
+            <div style="float: left;">
+                    <a href="/group/FLVn1Sc504/contest/272622/problem/O"><!--
+                        -->CMOUSE - Bắt chuột<!--
+                 --></a><!--
+                 -->
+            </div>
+                <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                            <div>
+                                standard input/output
+                            </div>
+                    0.25 s, 1024 MB
+                </div>
+        </div>
+    </td>
+    <td class="act">
+
+        <span class="act-item">
+            <a href="/group/FLVn1Sc504/contest/272622/submit/O"><img src="//sta.codeforces.com/s/79436/images/icons/submit-22x22.png" title="Submit" alt="Submit"/></a>
+        </span>
+
+                <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img class="toggle-favourite add-favourite" title="Add to favourites" alt="Add to favourites" data-type="PROBLEM" data-entityId="580428" data-size="16" src="//sta.codeforces.com/s/79436/images/icons/star_gray_16.png"/>
+    </span></span>
+
+    </td>
+        <td style="font-size: 1.1rem;">
+                &nbsp;
+        </td>
+
+            </table>
+            </div>
+        </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                // Create new ':containsIgnoreCase' selector for search
+                jQuery.expr[':'].containsIgnoreCase = function(a, i, m) {
+                    return jQuery(a).text().toUpperCase()
+                            .indexOf(m[3].toUpperCase()) >= 0;
+                };
+
+                if (window.updateDatatableFilter == undefined) {
+                    window.updateDatatableFilter = function(i) {
+                        var parent = $(i).parent().parent().parent().parent();
+                        $("tr.no-items", parent).remove();
+                        $("tr", parent).hide().removeClass('visible');
+                        var text = $(i).val();
+                        if (text) {
+                            $("tr" + ":containsIgnoreCase('" + text + "')", parent).show().addClass('visible');
+                        } else {
+                            parent.find(".rowCount").text("");
+                            $("tr", parent).show().addClass('visible');
+                        }
+
+                        var found = false;
+                        var visibleRowCount = 0;
+                        $("tr", parent).each(function () {
+                            if (!found) {
+                                if ($(this).find("th").size() > 0) {
+                                    $(this).show().addClass('visible');
+                                    found = true;
+                                }
+                            }
+                            if ($(this).hasClass('visible')) {
+                                visibleRowCount++;
+                            }
+                        });
+                        if (text) {
+                            parent.find(".rowCount").text("Matches: " + (visibleRowCount - (found ? 1 : 0)));
+                        }
+                        if (visibleRowCount == (found ? 1 : 0)) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo($(parent).find('table'));
+                        }
+                        $(parent).find("tr td").removeClass("dark");
+                        $(parent).find("tr.visible:odd td").addClass("dark");
+                    }
+
+                    $(".datatable .closed").click(function () {
+                        var parent = $(this).parent();
+                        $(this).hide();
+                        $(".filter", parent).fadeIn(function () {
+                            $("input", parent).val("").focus().css("border", "1px solid #aaa");
+                        });
+                    });
+
+                    $(".datatable .opened").click(function () {
+                        var parent = $(this).parent().parent();
+                        $(".filter", parent).fadeOut(function () {
+                            $(".closed", parent).show();
+                            $("input", parent).val("").each(function () {
+                                window.updateDatatableFilter(this);
+                            });
+                        });
+                    });
+
+                    $(".datatable .filter input").keyup(function(e) {
+                        window.updateDatatableFilter(this);
+                        e.preventDefault();
+                        e.stopPropagation();
+                    });
+
+                    $(".datatable table").each(function () {
+                        var found = false;
+                        $("tr", this).each(function () {
+                            if (!found && $(this).find("th").size() == 0) {
+                                found = true;
+                            }
+                        });
+                        if (!found) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo(this);
+                        }
+                    });
+
+                    // Applies styles to datatables.
+                    $(".datatable").each(function () {
+                        $(this).find("tr:first th").addClass("top");
+                        $(this).find("tr:last td").addClass("bottom");
+                        $(this).find("tr:odd td").addClass("dark");
+                        $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                        $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                    });
+
+                    $(".datatable table.tablesorter").each(function () {
+                        $(this).bind("sortEnd", function () {
+                            $(".datatable").each(function () {
+                                $(this).find("th, td")
+                                    .removeClass("top").removeClass("bottom")
+                                    .removeClass("left").removeClass("right")
+                                    .removeClass("dark");
+                                $(this).find("tr:first th").addClass("top");
+                                $(this).find("tr:last td").addClass("bottom");
+                                $(this).find("tr:odd td").addClass("dark");
+                                $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                                $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                            });
+                        });
+                    });
+                }
+        });
+    </script>
+
+    <form id="update-contest-form"
+          action="/group/FLVn1Sc504/contest/272622/releaseOrUpdate?action=releaseAndUpdate"
+          method="post" style="display: none;"><input type='hidden' name='csrf_token' value='ac9dfd9c09b05e4b352b3fbb9ee73569'/>
+    </form>
+    <script type="text/javascript">
+        $(function () {
+            $(".update-contest-link").click(function () {
+                Codeforces.confirm(
+                        "It may take several minutes, do not interrupt or close browser tab.<br/><br>Are you sure you want to update the contest?",
+                        function () {
+                            $("#update-contest-form").submit();
+                        },
+                        function () {
+                        },
+                        "Yes", "No"
+                );
+                return false;
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+        });
+    </script>
+
+    <div style="text-align: right; font-size: 1.1rem; margin-top: 3px;">
+        <a href="/group/FLVn1Sc504/contest/272622/problems">
+            Complete problemset
+        </a>
+    </div>
+    <div style="margin-top: 2em;">
+
+    <div style="position: relative; height: 2em;" class="action-link">
+        <div style="position: absolute; right: 0; margin: 0 0 1em 0;">
+        </div>
+    </div>
+
+
+<div class="datatable contest-272622-questions-container"
+     
+     style="background-color: #E1E1E1; padding-bottom: 3px;">
+            <div class="lt">&nbsp;</div>
+            <div class="rt">&nbsp;</div>
+            <div class="lb">&nbsp;</div>
+            <div class="rb">&nbsp;</div>
+
+            <div style="padding: 4px 0 0 6px;font-size:1.4rem;position:relative;">
+                Questions about problems
+
+                <div style="position:absolute;right:0.25em;top:0.35em;">
+                    <span style="padding:0;position:relative;bottom:2px;" class="rowCount"></span>
+
+                    <img class="closed" src="//sta.codeforces.com/s/79436/images/icons/control.png"/>
+
+                    <span class="filter" style="display:none;">
+                        <img class="opened" src="//sta.codeforces.com/s/79436/images/icons/control-270.png"/>
+                        <input style="padding:0 0 0 20px;position:relative;bottom:2px;border:1px solid #aaa;height:17px;font-size:1.3rem;"/>
+                    </span>
+                </div>
+            </div>
+            <div style="background-color: white;margin:0.3em 3px 0 3px;position:relative;">
+            <div class="ilt">&nbsp;</div>
+            <div class="irt">&nbsp;</div>
+            <table class="problem-questions-table">
+<tr>
+    <th style="width: 2em;">#</th>
+    <th>Party</th>
+    <th style="width: 5em;">When</th>
+    <th>Question</th>
+    <th>Answer</th>
+</tr>
+
+            </table>
+            </div>
+        </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                // Create new ':containsIgnoreCase' selector for search
+                jQuery.expr[':'].containsIgnoreCase = function(a, i, m) {
+                    return jQuery(a).text().toUpperCase()
+                            .indexOf(m[3].toUpperCase()) >= 0;
+                };
+
+                if (window.updateDatatableFilter == undefined) {
+                    window.updateDatatableFilter = function(i) {
+                        var parent = $(i).parent().parent().parent().parent();
+                        $("tr.no-items", parent).remove();
+                        $("tr", parent).hide().removeClass('visible');
+                        var text = $(i).val();
+                        if (text) {
+                            $("tr" + ":containsIgnoreCase('" + text + "')", parent).show().addClass('visible');
+                        } else {
+                            parent.find(".rowCount").text("");
+                            $("tr", parent).show().addClass('visible');
+                        }
+
+                        var found = false;
+                        var visibleRowCount = 0;
+                        $("tr", parent).each(function () {
+                            if (!found) {
+                                if ($(this).find("th").size() > 0) {
+                                    $(this).show().addClass('visible');
+                                    found = true;
+                                }
+                            }
+                            if ($(this).hasClass('visible')) {
+                                visibleRowCount++;
+                            }
+                        });
+                        if (text) {
+                            parent.find(".rowCount").text("Matches: " + (visibleRowCount - (found ? 1 : 0)));
+                        }
+                        if (visibleRowCount == (found ? 1 : 0)) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo($(parent).find('table'));
+                        }
+                        $(parent).find("tr td").removeClass("dark");
+                        $(parent).find("tr.visible:odd td").addClass("dark");
+                    }
+
+                    $(".datatable .closed").click(function () {
+                        var parent = $(this).parent();
+                        $(this).hide();
+                        $(".filter", parent).fadeIn(function () {
+                            $("input", parent).val("").focus().css("border", "1px solid #aaa");
+                        });
+                    });
+
+                    $(".datatable .opened").click(function () {
+                        var parent = $(this).parent().parent();
+                        $(".filter", parent).fadeOut(function () {
+                            $(".closed", parent).show();
+                            $("input", parent).val("").each(function () {
+                                window.updateDatatableFilter(this);
+                            });
+                        });
+                    });
+
+                    $(".datatable .filter input").keyup(function(e) {
+                        window.updateDatatableFilter(this);
+                        e.preventDefault();
+                        e.stopPropagation();
+                    });
+
+                    $(".datatable table").each(function () {
+                        var found = false;
+                        $("tr", this).each(function () {
+                            if (!found && $(this).find("th").size() == 0) {
+                                found = true;
+                            }
+                        });
+                        if (!found) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo(this);
+                        }
+                    });
+
+                    // Applies styles to datatables.
+                    $(".datatable").each(function () {
+                        $(this).find("tr:first th").addClass("top");
+                        $(this).find("tr:last td").addClass("bottom");
+                        $(this).find("tr:odd td").addClass("dark");
+                        $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                        $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                    });
+
+                    $(".datatable table.tablesorter").each(function () {
+                        $(this).bind("sortEnd", function () {
+                            $(".datatable").each(function () {
+                                $(this).find("th, td")
+                                    .removeClass("top").removeClass("bottom")
+                                    .removeClass("left").removeClass("right")
+                                    .removeClass("dark");
+                                $(this).find("tr:first th").addClass("top");
+                                $(this).find("tr:last td").addClass("bottom");
+                                $(this).find("tr:odd td").addClass("dark");
+                                $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                                $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                            });
+                        });
+                    });
+                }
+        });
+    </script>
+
+<script type="text/javascript">
+    function toggleQuestionHide() {
+        var hidden = $(this).attr("checked");
+        var isAnnouncement = $(this).attr("data-is-announcement");
+        var questionId = $(this).attr("data-question-id");
+
+        var row = $(this).parent().parent();
+
+        if (confirm(hidden ? "Are you sure you want to hide problem question?" : "Are you sure you want to show problem question?")) {
+            $.post("/group/FLVn1Sc504/data/changeProblemQuestionOrAnnouncementDataPage", {
+                action: "changeHiddenForQuestion",
+                contestId: 272622,
+                hidden: hidden,
+                isAnnouncement: isAnnouncement,
+                questionId: questionId
+            }, function (data) {
+                if (data["success"] === "true") {
+                    if (hidden) {
+                        row.addClass("highlighted-row");
+                    } else {
+                        row.removeClass("highlighted-row");
+                    }
+
+                    Codeforces.showMessage(hidden ? "Problem question is hidden for all users" : "Problem question is visible for all users");
+                } else {
+                    Codeforces.showMessage(data["message"]);
+                }
+            }, "json");
+        } else {
+            if (hidden) {
+                $(this).removeAttr("checked");
+            } else {
+                $(this).attr("checked", "true");
+            }
+        }
+
+        return false;
+    }
+
+    function toggleQuestionBroadcast() {
+        var broadcast = $(this).attr("checked");
+        var questionId = $(this).attr("data-question-id");
+
+        if (confirm(broadcast ? "Are you sure you want to broadcast problem question?" : "Are you sure you don't want to broadcast problem question?")) {
+            $.post("/group/FLVn1Sc504/data/changeProblemQuestionOrAnnouncementDataPage", {
+                action: "changeBroadcastForQuestion",
+                contestId: 272622,
+                broadcast: broadcast,
+                questionId: questionId
+            }, function (data) {
+                if (data["success"] == "true") {
+                    Codeforces.reload();
+                    //Codeforces.showMessage(broadcast ? "Problem question is broadcasted" : "Problem question isn't broadcasted");
+                } else {
+                    Codeforces.showMessage(data["message"]);
+                }
+            }, "json");
+        } else {
+            if (broadcast) {
+                $(this).removeAttr("checked");
+            } else {
+                $(this).attr("checked", "true");
+            }
+        }
+
+        return false;
+    }
+
+    $(function () {
+        $(".hide-question").change(toggleQuestionHide);
+        $(".broadcast-question").change(toggleQuestionBroadcast);
+    });
+</script>
+
+<div class="ask-question-box" style="display:none;">
+<h5>Ask a question</h5>
+<hr/>
+<form method="post" action=""><input type='hidden' name='csrf_token' value='ac9dfd9c09b05e4b352b3fbb9ee73569'/>
+    <input type="hidden" name="action" value="questionSubmitted"/>
+
+    <table class="table-form" style="width: 45em;">
+        <tr>
+            <td class="field-name">Problem:</td>
+            <td>
+                <select style="width: 25em;" name="submittedProblemIndex">
+                <option value="">Choose problem</option>
+                    <option value="A" >A - WEATHER - Điều kiện thời tiết</option>
+                    <option value="B" >B - NKBAS - Trung t&acirc;m bảo h&agrave;nh</option>
+                    <option value="C" >C - ZOOTOUR - Tham quan vườn b&aacute;ch th&uacute;</option>
+                    <option value="D" >D - SUMTREE - Tổng tr&ecirc;n c&acirc;y</option>
+                    <option value="E" >E - TCHESS - B&agrave;n cờ tam gi&aacute;c</option>
+                    <option value="F" >F - PRODUCT - T&iacute;ch</option>
+                    <option value="G" >G - OLDMAPS - Bộ bản đồ cũ kỹ</option>
+                    <option value="H" >H - COMPUTER - M&aacute;y t&iacute;nh</option>
+                    <option value="I" >I - NETACCEL - Tăng tốc mạng m&aacute;y t&iacute;nh</option>
+                    <option value="J" >J - INKPRINT - Mực in</option>
+                    <option value="K" >K - KINGDOMS - KINGDOMS</option>
+                    <option value="L" >L - KIDSMATH - B&eacute; l&agrave;m to&aacute;n</option>
+                    <option value="M" >M - CFLAG - Quốc kỳ rực rỡ</option>
+                    <option value="N" >N - VM10HNTW - X&acirc;y th&aacute;p H&agrave; Nội</option>
+                    <option value="O" >O - CMOUSE - Bắt chuột</option>
+                </select>
+            </td>
+        </tr>
+<tr class="subscription-row">
+     <td>&nbsp;</td>
+     <td>
+         <div class="shiftUp error__submittedProblemIndex">
+             <span class="error for__submittedProblemIndex " style="display: none;">&nbsp;</span>
+             <span class="notice for__submittedProblemIndex ">&nbsp;</span>
+         </div>
+     </td>
+</tr>
+
+        <tr>
+            <td class="field-name">Question:</td>
+            <td>
+                <textarea name="question" style="width: 100%; height: 15em;"></textarea>
+            </td>
+        </tr>
+<tr class="subscription-row">
+     <td>&nbsp;</td>
+     <td>
+         <div class="shiftUp error__question">
+             <span class="error for__question " style="display: none;">&nbsp;</span>
+             <span class="notice for__question ">&nbsp;</span>
+         </div>
+     </td>
+</tr>
+
+        <tr>
+            <td colspan="2">
+                <div style="text-align: center;">
+                    <input class="submit" type="submit" value="Send"/>
+                </div>
+            </td>
+        </tr>
+    </table>
+</form>
+</div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+$(".broadcast-question").css("font-weight", "bold");
+
+$(".ask-question-link").click(function () {
+    Codeforces.facebox(".ask-question-box", "//sta.codeforces.com/s/79436");
+    $("#facebox textarea[name=question]").wysiwyg({
+        controls : {
+            html : {
+                visible: true
+            }
+        }
+    });
+    $("#facebox .ask-question-box .submit").click(function () {
+        Codeforces.clearAjaxFormErrors("#facebox .table-form");
+        var question = $("#facebox textarea[name=question]").val();
+        var submittedProblemIndex = $("#facebox select[name=submittedProblemIndex]").val();
+        $.post("/group/FLVn1Sc504/data/newProblemQuestion",
+            { contestId: 272622, question: question, submittedProblemIndex: submittedProblemIndex },
+            function(data) {
+                var invalid = Codeforces.setAjaxFormErrors("#facebox .table-form", data);
+                if (!invalid) {
+                    $.facebox.close();
+                    Codeforces.reload();
+                }
+            },
+            "json"
+        );
+        return false;
+    });
+    return false;
+});
+        });
+    </script>
+
+<div class="add-announcement-box" style="display: none;">
+<h5>Add announcement</h5>
+<hr/>
+<form method="post" action=""><input type='hidden' name='csrf_token' value='ac9dfd9c09b05e4b352b3fbb9ee73569'/>
+    <table class="table-form" style="width:45em;">
+        <tr>
+            <td class="field-name">Problem:</td>
+            <td>
+                <select style="width: 25em;" name="submittedProblemIndex">
+                <option value="">Choose problem</option>
+                    <option value="generalAnnouncement" data-problem-name="" >General announcement</option>
+                    <option value="A" data-problem-name="WEATHER - Điều kiện thời tiết" >A - WEATHER - Điều kiện thời tiết</option>
+                    <option value="B" data-problem-name="NKBAS - Trung t&acirc;m bảo h&agrave;nh" >B - NKBAS - Trung t&acirc;m bảo h&agrave;nh</option>
+                    <option value="C" data-problem-name="ZOOTOUR - Tham quan vườn b&aacute;ch th&uacute;" >C - ZOOTOUR - Tham quan vườn b&aacute;ch th&uacute;</option>
+                    <option value="D" data-problem-name="SUMTREE - Tổng tr&ecirc;n c&acirc;y" >D - SUMTREE - Tổng tr&ecirc;n c&acirc;y</option>
+                    <option value="E" data-problem-name="TCHESS - B&agrave;n cờ tam gi&aacute;c" >E - TCHESS - B&agrave;n cờ tam gi&aacute;c</option>
+                    <option value="F" data-problem-name="PRODUCT - T&iacute;ch" >F - PRODUCT - T&iacute;ch</option>
+                    <option value="G" data-problem-name="OLDMAPS - Bộ bản đồ cũ kỹ" >G - OLDMAPS - Bộ bản đồ cũ kỹ</option>
+                    <option value="H" data-problem-name="COMPUTER - M&aacute;y t&iacute;nh" >H - COMPUTER - M&aacute;y t&iacute;nh</option>
+                    <option value="I" data-problem-name="NETACCEL - Tăng tốc mạng m&aacute;y t&iacute;nh" >I - NETACCEL - Tăng tốc mạng m&aacute;y t&iacute;nh</option>
+                    <option value="J" data-problem-name="INKPRINT - Mực in" >J - INKPRINT - Mực in</option>
+                    <option value="K" data-problem-name="KINGDOMS - KINGDOMS" >K - KINGDOMS - KINGDOMS</option>
+                    <option value="L" data-problem-name="KIDSMATH - B&eacute; l&agrave;m to&aacute;n" >L - KIDSMATH - B&eacute; l&agrave;m to&aacute;n</option>
+                    <option value="M" data-problem-name="CFLAG - Quốc kỳ rực rỡ" >M - CFLAG - Quốc kỳ rực rỡ</option>
+                    <option value="N" data-problem-name="VM10HNTW - X&acirc;y th&aacute;p H&agrave; Nội" >N - VM10HNTW - X&acirc;y th&aacute;p H&agrave; Nội</option>
+                    <option value="O" data-problem-name="CMOUSE - Bắt chuột" >O - CMOUSE - Bắt chuột</option>
+                </select>
+            </td>
+        </tr>
+<tr class="subscription-row">
+     <td>&nbsp;</td>
+     <td>
+         <div class="shiftUp error__submittedProblemIndex">
+             <span class="error for__submittedProblemIndex " style="display: none;">&nbsp;</span>
+             <span class="notice for__submittedProblemIndex ">&nbsp;</span>
+         </div>
+     </td>
+</tr>
+
+        <tr style="display: none;">
+            <td>&nbsp;</td>
+            <td>
+                <input type="checkbox" checked="checked" name="announceInPairContest"/>
+                <span class="notice">Add a copy of announcement for problem <span class="pairProblem"></span></span>
+            </td>
+        </tr>
+<tr class="subscription-row">
+     <td>&nbsp;</td>
+     <td>
+         <div class="shiftUp error__announceInPairContest">
+             <span class="error for__announceInPairContest " style="display: none;">&nbsp;</span>
+             <span class="notice for__announceInPairContest ">&nbsp;</span>
+         </div>
+     </td>
+</tr>
+
+        <tr class="subscription-row">
+            <td>&nbsp;</td>
+            <td>
+                <span class="notice shiftUp" style="word-break: break-word;">Fields below will be interpreted as plain text.</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="field-name">English text:</td>
+            <td>
+                <textarea name="englishText" class="bottom-space-small" style="width: 80%; height: 10em; font-family: monospace;"></textarea>
+            </td>
+        </tr>
+<tr class="subscription-row">
+     <td>&nbsp;</td>
+     <td>
+         <div class="shiftUp error__englishText">
+             <span class="error for__englishText " style="display: none;">&nbsp;</span>
+             <span class="notice for__englishText ">&nbsp;</span>
+         </div>
+     </td>
+</tr>
+
+        <tr>
+            <td class="field-name">Russian text:</td>
+            <td>
+                <textarea name="russianText" class="bottom-space-small" style="width: 80%; height: 10em; font-family: monospace"></textarea>
+            </td>
+        </tr>
+<tr class="subscription-row">
+     <td>&nbsp;</td>
+     <td>
+         <div class="shiftUp error__russianText">
+             <span class="error for__russianText " style="display: none;">&nbsp;</span>
+             <span class="notice for__russianText ">&nbsp;</span>
+         </div>
+     </td>
+</tr>
+
+        <tr>
+            <td class="field-name">Target user:</td>
+            <td>
+                <input class="targetUserHandle" name="targetUserHandle" style="width: 15em;"/>
+            </td>
+        </tr>
+<tr class="subscription-row">
+     <td>&nbsp;</td>
+     <td>
+         <div class="shiftUp error__targetUserHandle">
+             <span class="error for__targetUserHandle " style="display: none;">&nbsp;</span>
+             <span class="notice for__targetUserHandle ">Leave blank if you want to announce all participants&nbsp;</span>
+         </div>
+     </td>
+</tr>
+
+        <tr>
+            <td colspan="2">
+                <div style="text-align: center;">
+                    <input class="submit" type="submit" value="Send"/>
+                </div>
+            </td>
+        </tr>
+    </table>
+</form>
+</div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+var pairProblems = {};
+    pairProblems["A"] = "";
+    pairProblems["B"] = "";
+    pairProblems["C"] = "";
+    pairProblems["D"] = "";
+    pairProblems["E"] = "";
+    pairProblems["F"] = "";
+    pairProblems["G"] = "";
+    pairProblems["H"] = "";
+    pairProblems["I"] = "";
+    pairProblems["J"] = "";
+    pairProblems["K"] = "";
+    pairProblems["L"] = "";
+    pairProblems["M"] = "";
+    pairProblems["N"] = "";
+    pairProblems["O"] = "";
+$(".add-announcement-link").click(function () {
+    Codeforces.facebox(".add-announcement-box", "//sta.codeforces.com/s/79436");
+
+    $("#facebox .targetUserHandle").autocomplete("/data/handles", {
+        delay: 200,
+        width: 200,
+        selectFirst: false,
+        matchContains: true,
+        minChars: 3
+    });
+
+    $("#facebox select[name=submittedProblemIndex]").change(function() {
+        var pairProblem = pairProblems[$(this).val()];
+        var $tr = $("#facebox input[name=announceInPairContest]").closest("tr");
+        if (pairProblem) {
+            $tr.find(".pairProblem").text(pairProblem);
+            $tr.show();
+        } else {
+            $tr.hide();
+        }
+    });
+
+    $("#facebox .add-announcement-box .submit").click(function () {
+        Codeforces.clearAjaxFormErrors("#facebox .table-form");
+        var englishText= $("#facebox textarea[name=englishText]").val();
+        var russianText= $("#facebox textarea[name=russianText]").val();
+        var submittedProblemIndex = $("#facebox select[name=submittedProblemIndex]").val();
+        var problemName = $("#facebox select[name=submittedProblemIndex] option:selected").attr("data-problem-name");
+        var targetUserHandle = $("#facebox input[name=targetUserHandle]").val();
+        var announceInPairContest = $("#facebox input[name=announceInPairContest]").is(":checked");
+
+        var addAnnouncement = function () {
+            $.post("/group/FLVn1Sc504/data/newAnnouncement",
+                {contestId: 272622, englishText: englishText, russianText: russianText, submittedProblemIndex: submittedProblemIndex, targetUserHandle: targetUserHandle, announceInPairContest: announceInPairContest},
+                function (data) {
+                    var invalid = Codeforces.setAjaxFormErrors("#facebox .table-form", data);
+                    if (!invalid) {
+                        $.facebox.close();
+                        Codeforces.reload();
+                    }
+                },
+                "json"
+            );
+        }
+
+        if (confirm(
+            "Are you sure you want to add " +
+            (submittedProblemIndex == "generalAnnouncement" ? "general announcement" : "announcement for problem " + submittedProblemIndex + " - " + problemName)
+            + " with english text: \"" + englishText + "\" and russian text: \"" + russianText + "\""
+            + (targetUserHandle != "" ? " for user " + targetUserHandle : "") + "?")) {
+            addAnnouncement();
+        }
+
+        return false;
+    });
+
+    return false;
+});
+        });
+    </script>
+
+    </div>
+                </div>
+        </div>
+            <br style="clear: both;"/>
+            <div id="footer">
+                <div><a href="https://codeforces.com/">Codeforces</a> (c) Copyright 2010-2020 Mike Mirzayanov</div>
+                <div>The only programming contests Web 2.0 platform</div>
+                    <div>Server time: <span class="format-timewithseconds" data-locale="en">Apr/13/2020 13:40:21</span> (i2).</div>
+                    <div>Desktop version, switch to <a rel="nofollow" class="switchToMobile" href="?mobile=true">mobile version</a>.</div>
+                <div class="smaller"><a href="/privacy">Privacy Policy</a></div>
+
+                    <div style="margin-top: 25px;">
+                        Supported by
+                    </div>
+                    <div style="margin-top: 8px; padding-bottom: 20px; position: relative; left: 10px;">
+                        <a href="https://telegram.org/"><img style="margin-right: 2em; width: 60px;" src="//sta.codeforces.com/s/79436/images/telegram-100x100.png" alt="Telegram" title="Telegram"/></a>
+                        <a href="http://ifmo.ru/en/"><img style="width: 120px;" src="//sta.codeforces.com/s/79436/images/itmo_small_en-logo.png" alt="ИТМО" title="ИТМО"/></a>
+                    </div>
+            </div>
+        <script type="text/javascript">
+            $(function() {
+                $(".switchToMobile").click(function() {
+                    Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", "true"));
+                    return false;
+                });
+                $(".switchToDesktop").click(function() {
+                    Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", "false"));
+                    return false;
+                });
+            });
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if ($(window).width() < 1600) {
+                $('.button-up').css('width', '30px').css('line-height', '30px').css('font-size', '20px');
+            }
+
+            if ($(window).width() >= 1200) {
+                $ (window).scroll (function () {
+                    if ($ (this).scrollTop () > 100) {
+                        $ ('.button-up').fadeIn();
+                    } else {
+                        $ ('.button-up').fadeOut();
+                    }
+                });
+
+                $('.button-up').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 500);
+                    return false;
+                });
+
+                $('.button-up').hover(function () {
+                    $(this).animate({
+                        'opacity':'1'
+                    }).css({'background-color':'#e7ebf0','color':'#6a86a4'});
+                }, function () {
+                    $(this).animate({
+                        'opacity':'0.7'
+                    }).css({'background':'none','color':'#d3dbe4'});;
+                });
+            }
+            Codeforces.focusOnError();
+        });
+    </script>
+
+        <div class="userListsFacebox" style="display:none;">
+            <div style="padding: 0.5em; width: 600px; max-height: 200px; overflow-y: auto">
+<div class="datatable"
+     
+     style="background-color: #E1E1E1; padding-bottom: 3px;">
+            <div class="lt">&nbsp;</div>
+            <div class="rt">&nbsp;</div>
+            <div class="lb">&nbsp;</div>
+            <div class="rb">&nbsp;</div>
+
+            <div style="padding: 4px 0 0 6px;font-size:1.4rem;position:relative;">
+                User lists
+
+                <div style="position:absolute;right:0.25em;top:0.35em;">
+                    <span style="padding:0;position:relative;bottom:2px;" class="rowCount"></span>
+
+                    <img class="closed" src="//sta.codeforces.com/s/79436/images/icons/control.png"/>
+
+                    <span class="filter" style="display:none;">
+                        <img class="opened" src="//sta.codeforces.com/s/79436/images/icons/control-270.png"/>
+                        <input style="padding:0 0 0 20px;position:relative;bottom:2px;border:1px solid #aaa;height:17px;font-size:1.3rem;"/>
+                    </span>
+                </div>
+            </div>
+            <div style="background-color: white;margin:0.3em 3px 0 3px;position:relative;">
+            <div class="ilt">&nbsp;</div>
+            <div class="irt">&nbsp;</div>
+            <table class="">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+            </table>
+            </div>
+        </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                // Create new ':containsIgnoreCase' selector for search
+                jQuery.expr[':'].containsIgnoreCase = function(a, i, m) {
+                    return jQuery(a).text().toUpperCase()
+                            .indexOf(m[3].toUpperCase()) >= 0;
+                };
+
+                if (window.updateDatatableFilter == undefined) {
+                    window.updateDatatableFilter = function(i) {
+                        var parent = $(i).parent().parent().parent().parent();
+                        $("tr.no-items", parent).remove();
+                        $("tr", parent).hide().removeClass('visible');
+                        var text = $(i).val();
+                        if (text) {
+                            $("tr" + ":containsIgnoreCase('" + text + "')", parent).show().addClass('visible');
+                        } else {
+                            parent.find(".rowCount").text("");
+                            $("tr", parent).show().addClass('visible');
+                        }
+
+                        var found = false;
+                        var visibleRowCount = 0;
+                        $("tr", parent).each(function () {
+                            if (!found) {
+                                if ($(this).find("th").size() > 0) {
+                                    $(this).show().addClass('visible');
+                                    found = true;
+                                }
+                            }
+                            if ($(this).hasClass('visible')) {
+                                visibleRowCount++;
+                            }
+                        });
+                        if (text) {
+                            parent.find(".rowCount").text("Matches: " + (visibleRowCount - (found ? 1 : 0)));
+                        }
+                        if (visibleRowCount == (found ? 1 : 0)) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo($(parent).find('table'));
+                        }
+                        $(parent).find("tr td").removeClass("dark");
+                        $(parent).find("tr.visible:odd td").addClass("dark");
+                    }
+
+                    $(".datatable .closed").click(function () {
+                        var parent = $(this).parent();
+                        $(this).hide();
+                        $(".filter", parent).fadeIn(function () {
+                            $("input", parent).val("").focus().css("border", "1px solid #aaa");
+                        });
+                    });
+
+                    $(".datatable .opened").click(function () {
+                        var parent = $(this).parent().parent();
+                        $(".filter", parent).fadeOut(function () {
+                            $(".closed", parent).show();
+                            $("input", parent).val("").each(function () {
+                                window.updateDatatableFilter(this);
+                            });
+                        });
+                    });
+
+                    $(".datatable .filter input").keyup(function(e) {
+                        window.updateDatatableFilter(this);
+                        e.preventDefault();
+                        e.stopPropagation();
+                    });
+
+                    $(".datatable table").each(function () {
+                        var found = false;
+                        $("tr", this).each(function () {
+                            if (!found && $(this).find("th").size() == 0) {
+                                found = true;
+                            }
+                        });
+                        if (!found) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo(this);
+                        }
+                    });
+
+                    // Applies styles to datatables.
+                    $(".datatable").each(function () {
+                        $(this).find("tr:first th").addClass("top");
+                        $(this).find("tr:last td").addClass("bottom");
+                        $(this).find("tr:odd td").addClass("dark");
+                        $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                        $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                    });
+
+                    $(".datatable table.tablesorter").each(function () {
+                        $(this).bind("sortEnd", function () {
+                            $(".datatable").each(function () {
+                                $(this).find("th, td")
+                                    .removeClass("top").removeClass("bottom")
+                                    .removeClass("left").removeClass("right")
+                                    .removeClass("dark");
+                                $(this).find("tr:first th").addClass("top");
+                                $(this).find("tr:last td").addClass("bottom");
+                                $(this).find("tr:odd td").addClass("dark");
+                                $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                                $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                            });
+                        });
+                    });
+                }
+        });
+    </script>
+            </div>
+        </div>
+        <script type="application/javascript">
+            $(function() {
+                $(".userListMarker").click(function() {
+                    $.post("/data/lists", {action: "findTouched"}, function(json) {
+                        Codeforces.facebox(".userListsFacebox");
+                        var tbody = $("#facebox tbody");
+                        tbody.empty();
+                        for (var i in json) {
+                            tbody.append(
+                                    $("<tr></tr>").append(
+                                            $("<td></td>").attr("data-readKey", json[i].readKey).text(json[i].name)
+                                    )
+                            );
+                        }
+                        Codeforces.updateDatatables();
+                        tbody.find("td").css("cursor", "pointer").click(function() {
+                            document.location = Codeforces.updateUrlParameter(document.location.href, "list", $(this).attr("data-readKey"));
+                        });
+                    }, "json");
+                });
+            });
+        </script>
+</div>
+    <script type="application/javascript">
+        if ('serviceWorker' in navigator && 'fetch' in window && 'caches' in window) {
+            var parser = new UAParser();
+            var browserName = parser.getBrowser().name;
+            var browserVersion = parser.getBrowser().version;
+
+            var supportedBrowser = false;
+            var supportedBrowsers = {
+                "Chrome": "76",
+                "Firefox": "68",
+                // "Edge": "18",
+                "Safari": "12.1",
+                "Opera": "63",
+                "Yandex": "19.9"
+            };
+
+            for (var name in supportedBrowsers) {
+                if (name === browserName && supportedBrowsers[name] <= browserVersion) {
+                    supportedBrowser = true;
+                }
+            }
+
+            if (supportedBrowser) {
+                navigator.serviceWorker.register('/service-worker-79436.js')
+                    .then(function (registration) {
+                        console.log('Service worker registered');
+                    })
+                    .catch(function (error) {
+                        console.log('Registration failed: ', error);
+                    });
+            } else {
+                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                    for (var i = 0; i < registrations.length; i++) {
+                        registrations[i].unregister();
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
